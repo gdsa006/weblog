@@ -240,12 +240,11 @@
                   <p>{{$post->post_title}}</p>
                   <span>June 26, 2018</span>
                   <div class="blog-image">
-                  <img src="images/a6d178_2a7e36fa776b42089bc5164e90c769dc_mv2.webp" class="img-responsive">
+                  <img src="/images/uploads/{{$post->image}}" class="img-responsive">
                   </div>
                 </a>
                 </div>
           @endforeach      
-                 
             </div>
     </section>
 
