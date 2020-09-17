@@ -285,7 +285,7 @@ public function updatePost($id, Request $request){
 
             Mail::send('contact-mail', array('fname'=>Input::get('fname'), 'lname'=>Input::get('lname'), 'phone'=>Input::get('phone'), 'msg'=>Input::get('message')), function($message){
                 $message->to('sentientatman@protonmail.com', 'admin')->replyTo(Input::get('email'), Input::get('fname'))->subject(Input::get('fname').' contacted you from SENTIENTATMAN.COM');
-                
+            }
                 $help = new Help();
                $help->service = $service;
                $help->state = $state;
@@ -295,7 +295,8 @@ public function updatePost($id, Request $request){
                $help->telephone = $telephone;
                $help->save();
                 return Redirect::back()->withInput()->with('alert-success', 'The data saved successfully');           
-            }
+            
     }
 
+}
 }
