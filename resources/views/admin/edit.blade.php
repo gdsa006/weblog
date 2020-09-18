@@ -16,8 +16,8 @@
     <tr>
       <th scope="col">#</th>
       <th scope="col">Title</th>
-      <th scope="col">Added On</th>
-      <th scope="col">Updated On</th>
+      <th scope="col">Added</th>
+      <th scope="col">Updated</th>
     </tr>
   </thead>
   <tbody>
@@ -31,6 +31,11 @@
     @endforeach
   
   </tbody>
+  <tfoot>
+  <tr>
+  <td colspan="4" align="center">{{$posts->render()}}</td>
+  </tr>
+  </tfoot>
 </table>
 
 @stop

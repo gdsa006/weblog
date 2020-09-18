@@ -34,7 +34,7 @@ class Controller extends BaseController
 
     public function blog(){
         $blog = new Blog();
-        $posts = $blog->all();
+        $posts = $blog->paginate(5);
 
         $blog = new Blog();
         $recent = $blog->limit(3)->orderBy('created_at', 'DESC')->get();
@@ -52,7 +52,12 @@ class Controller extends BaseController
 
         $blog = new Blog();
         $recent = $blog->limit(3)->orderBy('created_at', 'DESC')->get();
-        return View('blog/single', compact('post', 'recent'));
+
+        $data = $blog->orderBy('created_at')->get()->groupBy(function($date) {
+            return Carbon::parse($date->created_at)->format('M o');
+        });
+
+        return View('blog/single', compact('post', 'recent', 'data'));
     }
 
     public function showLogin()
@@ -154,13 +159,13 @@ public function addNewPost(){
 
 public function editPost(){
     $posts = new Blog();
-    $posts = $posts->all();
+    $posts = $posts->paginate(10);
     return View('admin/edit', compact('posts'));
 }
 
 public function deletePost(){
     $posts = new Blog();
-    $posts = $posts->all();
+    $posts = $posts->paginate(10);
     return View('admin/delete', compact('posts'));
 }
 

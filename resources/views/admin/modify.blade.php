@@ -20,7 +20,7 @@
 
 <div class="form-group">
     {{ Form::label('body', 'Description') }}
-    {!! Form::textarea('body', $post->post_body, array('placeholder' => '', 'class' => 'form-control', 'style' => 'resize:none', 'id' => 'desc')) !!}
+    {!! Form::textarea('body', $post->post_body, array('placeholder' => '', 'class' => 'form-control description', 'style' => 'resize:none', 'id' => 'desc')) !!}
     <span class="text-danger">{{ $errors->first('body') }}</span>
 </div>
 <input type="hidden" name="image" id="blog-image" value="{{$post->image}}">

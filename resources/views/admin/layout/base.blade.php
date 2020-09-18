@@ -138,6 +138,15 @@ table tr:hover{
     width: 263px;
     display: block;
 }
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+  background-color: #419a1c;
+    border-color: #419a1c;
+}
+
+.pagination>li>a, .pagination>li>span{
+  color: #419a1c;
+}
 </style>
     <title>AVO Realty | Showings on Demand | Live, Interactive, Virtual</title>
     </head>

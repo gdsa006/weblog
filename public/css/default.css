@@ -781,7 +781,7 @@ POST PAGE
     font-weight: 300;
 }
 
-#post span{
+#post .data span{
     margin: 5px 0 10px;
     float: left;
     width: 100%;

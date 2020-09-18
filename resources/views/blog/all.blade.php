@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-8">
             @foreach($posts as $post)
-                <div class="col-md-12" style="margin: 10px 0;">
+                <div class="col-md-12 data" style="margin: 10px 0;">
                     <a href="/blog/{{$post->slug}}">
                   <p>{{$post->post_title}}</p>
                   <span>June 26, 2018</span>
@@ -19,7 +19,12 @@
                 </a>
                 </div>
                 <div class="divseprator" style="float: left; width: 100%"></div>
-          @endforeach      
+          @endforeach 
+          <div class="col-md-12">
+              <div class="row text-center">
+          {{$posts->render()}}
+              </div>
+          </div>     
             </div>
             <div class="col-md-4">
                 <div id="sidebar">

@@ -56,15 +56,16 @@
                     </div>
                     <hr>
                     <ul>
-                        <li>
-                            <a href="#">June 2018</a>
+                    @foreach($data as $date => $posts)
+                    <li class="nav-item">
+                            <?php
+                        $exploded = explode(" ",$date);
+                        ?>
+                            <span class="d-inline">    
+                                <a class="nav-link collapsed text-truncate px-0 d-inline" href=<?php echo '/blog/' . $exploded[0] . '/' . $exploded[1] ?>>{{ $date }}</a>
+                             </span>
                         </li>
-                        <li>
-                            <a href="#">June 2018</a>
-                        </li>
-                        <li>
-                            <a href="#">June 2018</a>
-                        </li>
+                        @endforeach
                     </ul>
                 </div>
 

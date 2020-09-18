@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="logowrap" data-aos="fade-down">
-                        <a href="index.html"><img src="/images/avo-logo.png" alt="AVO Reality"></a>
+                        <a href="index.html"><img src="/images/logo.png" alt="NADACA"></a>
                     </div>
 
                     <div class="navigate" data-aos="fade-down">
