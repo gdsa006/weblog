@@ -25,8 +25,15 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
+            <div class="row row-eq-height">
+            <div class="col-sm-5">
+                    <div class="aboutPic embed-responsive embed-responsive-16by9" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
+                    <video autoplay loop class="">
+                            <source src="images/mission.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-sm-7">
                     <div class="aboutDetail" data-aos="fade-left" data-aos-easing="ease" data-aos-delay="200">
                         <h3>Our Mission</h3>
                         <p>The not for profit National Association of Debt and Credit Advocates (NADACA®) uses its expertise in consumer law such as the FCRA, FDCPA, and TCPA to work for consumer justice and economic security for all Americans.</p>

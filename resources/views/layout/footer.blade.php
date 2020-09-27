@@ -25,7 +25,31 @@
                 </div>
             </div>
         </div>
+        <div class="row">
+                <div class="col-lg-12">
+                    <div id="divbar" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"></div>
+                </div>
+            </div>
+            <div class="row" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+                <div class="col-lg-6">
+                    <div class="subscrbe">
+                        <div class="subscrbe-container">
+                            <form method="post" action="https://sendfox.com/form/3o09v3/3z0zwm" class="sendfox-form" id="3z0zwm" data-async="true"><input type="email" placeholder="Email Subscription" name="email" required />
 
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div><button type="submit">Submit</button></form>
+                            <script src="https://sendfox.com/js/form.js"></script>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="captionlinks">
+                        <a href="#joinUS">JOIN NOW</a>
+                        <a href="/blog" data-toggle="modal" data-target="#privacyPolicy">ARCHIVES</a>
+                        <a href="#" data-toggle="modal" data-target=".contactUsModel">CONTACT US</a>
+                    </div>
+                </div>
+
+            </div>
 
         <!--             <div class="row">
                 <div class="col-lg-12">
