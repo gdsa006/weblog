@@ -263,7 +263,7 @@ public function updatePost($id, Request $request){
         return View('blog/search', compact('results', 'term'));
     }
 
-    public function helpForm(){
+    public function sendMail(Request $request){
         $service = Input::get('service');
         $state = Input::get('state');
         $zipcode = Input::get('zip-code');
@@ -273,9 +273,9 @@ public function updatePost($id, Request $request){
         $rules = ([
             'service'    => 'required',
             'state' => 'required',
-            'zipcode' => 'required',
-            'yourname' => 'required',
-            'youremail' => 'required',
+            'zip-code' => 'required',
+            'your-name' => 'required',
+            'your-email' => 'required',
             'telephone' => 'required',
         ]);
     
@@ -288,8 +288,8 @@ public function updatePost($id, Request $request){
             }
         else{
 
-            Mail::send('contact-mail', array('fname'=>Input::get('fname'), 'lname'=>Input::get('lname'), 'phone'=>Input::get('phone'), 'msg'=>Input::get('message')), function($message){
-                $message->to('sentientatman@protonmail.com', 'admin')->replyTo(Input::get('email'), Input::get('fname'))->subject(Input::get('fname').' contacted you from SENTIENTATMAN.COM');
+            Mail::send('contact-mail', array('service'=>Input::get('service'), 'state'=>Input::get('state'), 'zip-code'=>Input::get('zip-code'), 'yourname'=>Input::get('yourname'),'youremail'=>Input::get('youremail'), 'telephone'=>Input::get('telephone')), function($message){
+                $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('youremail'), Input::get('yourname'))->subject(Input::get('yourname').' contacted you from this.COM');
             });
                 $help = new Help();
                $help->service = $service;

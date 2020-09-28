@@ -72,7 +72,10 @@ fbq('track', 'PageView');
     <script src="js/aos.js"></script>
 
     
-<script>        var help = '{{ route('help') }}'; </script>
+<script>        
+var help = '{{ route('help') }}';         
+var mail = '{{ route('mail') }}';
+ </script>
 
 
     <script>
@@ -111,7 +114,7 @@ $('.sendMail').on('submit', function(e){
     $('.sendMail input[type=submit]').attr('disabled','disabled');
     $.ajax({
         method: 'POST',
-        url: help,
+        url: mail,
         data: new FormData(form),
         contentType: false,
         cache: false,
@@ -119,7 +122,7 @@ $('.sendMail').on('submit', function(e){
         success: function (data) {
             console.log(data);
             if(data.message == 'success'){
-            
+                
             }
             else{
                

@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-md-6 left">
                             <div class="wrapper">
-                                {{ Form::open(array('url' => '/advocate/help/', 'class' => 'contactForm', 'name' => 'contactForm')) }}
+                            {{ Form::open(array('url' => '/help/mail', 'class' => 'mt-4 sendMail', 'name' => 'contactForm', 'files' => 'false', 'enctype' => 'multipart/form-data')) }}
                                 <p>Please fill in the following information to speak with an advocate for help about your individual situation.</p>
                                 <!-- if there are login errors, show them here -->
                                 <div class="form-group">
