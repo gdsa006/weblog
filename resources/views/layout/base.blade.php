@@ -122,10 +122,9 @@ $('.sendMail').on('submit', function(e){
         success: function (data) {
             console.log(data);
             if(data.message == 'success'){
-                
             }
             else{
-               
+                $("#validationErrors").html(data.message + '<br>');
             }
         }
     })
