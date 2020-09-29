@@ -86,10 +86,10 @@
                                 <!-- if there are login errors, show them here -->
                                 <div class="form-group">
                                     {{ Form::label('service', 'Service') }}
-                                    {{ Form::textarea('service', Input::old('choose-service'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::textarea('service', Input::old('service'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
                                 </div>
                                 <div class="form-group">
-                                    {{ Form::label('choose-state', 'Choose a State') }}
+                                    {{ Form::label('state', 'Choose a State') }}
                                     {{ Form::select('state',array(
     'AL'=>'Alabama',
     'AK'=>'Alaska',
@@ -149,16 +149,16 @@ array(
 )) }}
                                 </div>
                                 <div class="form-group">
-                                    {{ Form::label('zip-code', 'Zipcode') }}
-                                    {{ Form::text('zip-code', Input::old('zip-code'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::label('zipcode', 'Zipcode') }}
+                                    {{ Form::text('zipcode', Input::old('zipcode'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
                                 </div>
                                 <div class="form-group">
-                                    {{ Form::label('your-name', 'Your Name') }}
-                                    {{ Form::text('your-name', Input::old('your-name'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::label('yourname', 'Your Name') }}
+                                    {{ Form::text('yourname', Input::old('yourname'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
                                 </div>
                                 <div class="form-group">
-                                    {{ Form::label('your-email', 'Your Email') }}
-                                    {{ Form::text('your-email', Input::old('your-email'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::label('youremail', 'Your Email') }}
+                                    {{ Form::text('youremail', Input::old('youremail'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('telephone', 'Telephone') }}

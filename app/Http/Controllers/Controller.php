@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Blog;
+use App\Help;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -266,16 +267,16 @@ public function updatePost($id, Request $request){
     public function sendMail(Request $request){
         $service = Input::get('service');
         $state = Input::get('state');
-        $zipcode = Input::get('zip-code');
-        $yourname = Input::get('your-name');
-        $youremail = Input::get('your-email');
+        $zipcode = Input::get('zipcode');
+        $yourname = Input::get('yourname');
+        $youremail = Input::get('youremail');
         $telephone = Input::get('telephone');
         $rules = ([
             'service'    => 'required',
             'state' => 'required',
-            'zip-code' => 'required',
-            'your-name' => 'required',
-            'your-email' => 'required',
+            'zipcode' => 'required',
+            'yourname' => 'required',
+            'youremail' => 'required',
             'telephone' => 'required',
         ]);
     
@@ -288,9 +289,9 @@ public function updatePost($id, Request $request){
             }
         else{
 
-            Mail::send('contact-mail', array('service'=>Input::get('service'), 'state'=>Input::get('state'), 'zip-code'=>Input::get('zip-code'), 'yourname'=>Input::get('yourname'),'youremail'=>Input::get('youremail'), 'telephone'=>Input::get('telephone')), function($message){
-                $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('youremail'), Input::get('yourname'))->subject(Input::get('yourname').' contacted you from this.COM');
-            });
+             Mail::send('contact-mail', array('service'=>Input::get('service'), 'state'=>Input::get('state'), 'zipcode'=>Input::get('zipcode'), 'yourname'=>Input::get('yourname'),'youremail'=>Input::get('youremail'), 'telephone'=>Input::get('telephone')), function($message){
+                 $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('youremail'), Input::get('yourname'))->subject(Input::get('yourname').' contacted you from this.COM');
+             });
                 $help = new Help();
                $help->service = $service;
                $help->state = $state;
@@ -299,7 +300,10 @@ public function updatePost($id, Request $request){
                $help->youremail = $youremail;
                $help->telephone = $telephone;
                $help->save();
-                return Redirect::back()->withInput()->with('alert-success', 'The data saved successfully');           
+                //return Redirect::back()->withInput()->with('alert-success', 'The data saved successfully');           
+                return Response::json([
+                    'message'   => 'success',
+                    ]);
             
     }
 
