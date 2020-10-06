@@ -1670,6 +1670,9 @@ RESPONSIVE STYLE
 ============================ */
 
 @media only screen and (max-width: 768px) {
+    #getHelp .wrapper{
+        margin: 0 !important
+    }
     /* ----------------
 LOGO STYLE
 ---------------- */
