@@ -207,7 +207,7 @@ nav li a:focus {
     background: transparent;
 }
 
-.nav li a.active {
+.nav li a.active, .nav2 li a.active {
     text-decoration: none;
     background: #def1ce;
     color: #419a1c;
