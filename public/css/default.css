@@ -1670,6 +1670,11 @@ RESPONSIVE STYLE
 ============================ */
 
 @media only screen and (max-width: 768px) {
+
+    .help-form .modal-dialog{
+        width: 100% !important;
+         margin: auto !important;
+    }
     #getHelp .wrapper{
         margin: 0 !important
     }

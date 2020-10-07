@@ -77,20 +77,22 @@
     <div class="help-form modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 left">
                             <div class="wrapper">
 
                             <div id="validationErrors">
-                                Errors
-                            </div>
+                                                       </div>
                             {{ Form::open(array('url' => '/help/mail', 'class' => 'mt-4 sendMail', 'name' => 'contactForm', 'files' => 'false', 'enctype' => 'multipart/form-data')) }}
                                 <p>Please fill in the following information to speak with an advocate for help about your individual situation.</p>
                                 <!-- if there are login errors, show them here -->
                                 <div class="form-group">
                                     {{ Form::label('service', 'Service') }}
-                                    {{ Form::textarea('service', Input::old('service'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::textarea('service', Input::old('service'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required' )) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('state', 'Choose a State') }}
@@ -149,24 +151,24 @@
 ) , 
 Input::old('state'), 
 array(
-    'class'       => 'form-control'
+    'class'       => 'form-control', 'required' => 'required'
 )) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('zipcode', 'Zipcode') }}
-                                    {{ Form::text('zipcode', Input::old('zipcode'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::text('zipcode', Input::old('zipcode'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required')) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('yourname', 'Your Name') }}
-                                    {{ Form::text('yourname', Input::old('yourname'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::text('yourname', Input::old('yourname'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required')) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('youremail', 'Your Email') }}
-                                    {{ Form::text('youremail', Input::old('youremail'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::text('youremail', Input::old('youremail'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required')) }}
                                 </div>
                                 <div class="form-group">
                                     {{ Form::label('telephone', 'Telephone') }}
-                                    {{ Form::text('telephone', Input::old('telephone'), array('placeholder' => '', 'class' => 'form-control customInput')) }}
+                                    {{ Form::text('telephone', Input::old('telephone'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required')) }}
                                 </div>
                                 <p>{{ Form::submit('Submit', ['class' => 'btn oval-btn sendMail']) }}</p>
                                 {{ Form::close() }}

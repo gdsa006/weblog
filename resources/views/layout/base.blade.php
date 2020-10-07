@@ -120,11 +120,10 @@ $('.sendMail').on('submit', function(e){
         cache: false,
         processData: false,
         success: function (data) {
-            console.log(data);
             if(data.message == 'success'){
             }
             else{
-                $("#validationErrors").html(data.message + '<br>');
+                $("#validationErrors").html('<p style="color: red">' + data.message + '</p>');
             }
         }
     })
