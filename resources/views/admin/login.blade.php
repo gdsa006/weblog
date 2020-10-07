@@ -31,7 +31,9 @@
 <p>{{ Form::submit('Submit!') }}</p>
 {{ Form::close() }}
 
-
+<div style="color: red">
+    {{ Session::get('alert-danger') }}
+</div>
 
         </div>
         </div>

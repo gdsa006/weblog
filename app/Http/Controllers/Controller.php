@@ -105,7 +105,7 @@ class Controller extends BaseController
         } else {        
     
             // validation not successful, send back to form 
-            return Redirect::to('admin/login');
+            return Redirect::to('/login')->with('alert-danger', 'Incorrect Login');
     
         }
     }
