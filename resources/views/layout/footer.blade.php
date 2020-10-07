@@ -170,7 +170,7 @@ array(
                                     {{ Form::label('telephone', 'Telephone') }}
                                     {{ Form::text('telephone', Input::old('telephone'), array('placeholder' => '', 'class' => 'form-control customInput', 'required' => 'required')) }}
                                 </div>
-                                <p>{{ Form::submit('Submit', ['class' => 'btn oval-btn sendMail']) }}</p>
+                                <p  id="mail-btn">{{ Form::submit('Submit', ['class' => 'btn oval-btn sendMail']) }}</p>
                                 {{ Form::close() }}
                             </div>
                         </div>

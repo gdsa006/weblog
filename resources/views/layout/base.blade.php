@@ -120,7 +120,12 @@ $('.sendMail').on('submit', function(e){
         cache: false,
         processData: false,
         success: function (data) {
+            
             if(data.message == 'success'){
+                console.log('Email Sent');
+                $('input.sendMail').hide();
+                $('#mail-btn').html('<span style="color: green">Mail Sent!</span>');
+
             }
             else{
                 $("#validationErrors").html('<p style="color: red">' + data.message + '</p>');
