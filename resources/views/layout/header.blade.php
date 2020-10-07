@@ -16,13 +16,13 @@
                                 <i class="fas fa-bars"></i>
                             </div>
                             <ul>
-                                <li><a href="/#videoBanner">Home</a></li>
-                                <li><a href="/#who-we-are">WHO WE ARE</a></li>
-                                <li><a href="/#what-we-do">WHAT WE DO</a></li>
-                                <li><a href="/#getHelp">GET HELP</a></li>
-                                <li><a href="/#news">NEWS</a></li>
-                                <li class="{{ (request()->is('resources')) ? 'active' : '' }}"><a href="/resources">RESOURCES</a></li>
-                                <li class=" logIn"><a href="#joinUS" data-scrolltime="1500">Join Now</a></li>
+                                <li><a href="#videoBanner">Home</a></li>
+                                <li><a href="#who-we-are">WHO WE ARE</a></li>
+                                <li><a href="#what-we-do">WHAT WE DO</a></li>
+                                <li><a href="#getHelp">GET HELP</a></li>
+                                <li><a href="#news">NEWS</a></li>
+                                <li><a href="/resources">RESOURCES</a></li>
+                                <li class=" logIn"><a data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl" href="" data-scrolltime="1500">Join Now</a></li>
                             </ul>
                         </nav>
                     </div>

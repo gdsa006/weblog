@@ -60,10 +60,10 @@ fbq('track', 'PageView');
     </div>
         <!-- Bootstrap jQuery -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.navScroll.js"></script>
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.navScroll.js') }}"></script>
     <!-- All Script -->
-    <script src="js/script.js"></script>
+    <script src="{{ asset('js/script.js') }}"></script>
 
     <!-- Owl Carousel -->
     <!-- <script src="js/jquery.min.js"></script> -->
@@ -130,5 +130,6 @@ $('.sendMail').on('submit', function(e){
     })
 }); 
 </script>
+
     </body>
 </html>
