@@ -114,7 +114,7 @@
                        </ul>
                        <p>Brochures may be downloaded free of cost.</p>
                        <p>NADACA member advocates are ready to help. Please fill in your information to speak with an advocate for help about your individual situation.</p>
-                       <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-target="#agentModel" data-toggle="modal">Get Started</a>
+                       <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">Get Started</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@
                         <p>NADACA’s Advocate program fosters a deeper engagement of members in education activities and develops greater connectivity between members. The Program’s focus is to provide ongoing opportunities for members to participate in our initiatives according to their level of interest, with continued support from the Association.</p>
                         <p>“It is critical Americans develop a deeper understanding of consumer credit and debt collection laws – it is our aimtoprotect families facing financial devastation and to work with all to createsolutions that help give people an authentic fresh start.”</p>
                         <p> Where can I learn more about the Program?</p>
-                        <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-target="#agentModel" data-toggle="modal">Get Started</a>
+                        <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">Get Started</a>
                        <p style="font-size: 12px">If you’d like to join our efforts or learn more about the association, please contact us at admin@nadaca.com.</p>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                         <p>You need to know the optimal way to resolve your specific financial situation. As a consumer under stress it is hard to develop the correct knowledge quickly. At this point, what happens all too often, is thatmanyfall victim to “so called” debt settlement companies to find a way out. Nearly everyone from settlement companies to counselors sell you their “solution,” as the best you can do. They rarely spend the time truly analyzing what YOU really need.</p>
                         <p>We refer you to Member Advocates who can develop custom plans that adhere to NADACA’S code of ethics with your specific needsfully understood.</p>
                         <p>Find a qualified member advocate today.</p>
-                        <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-target="#agentModel" data-toggle="modal">Get Started</a>
+                        <a href="#" class="oval-btn" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">Get Started</a>
                     </div>
                 </div>
                

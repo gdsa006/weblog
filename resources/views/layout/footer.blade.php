@@ -43,7 +43,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="captionlinks">
-                        <a href="#joinUS">JOIN NOW</a>
+                        <a href="#" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">JOIN NOW</a>
                         <a href="/blog" data-toggle="modal" data-target="#privacyPolicy">ARCHIVES</a>
                         <a href="#" data-toggle="modal" data-target=".contactUsModel">CONTACT US</a>
                     </div>
