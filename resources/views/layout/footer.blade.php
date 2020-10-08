@@ -421,20 +421,20 @@ array(
                                 <ul>
                                     <li>
                                         <div class="formlogo">
-                                            <img src="images/avo-logo.png" alt="AVO Logo">
+                                            <img src="images/logo.png" alt="AVO Logo">
                                         </div>
                                     </li>
                                     <li>
-                                        <span>EMAIL</span> Concierge@avorealty.com
+                                        <span>EMAIL</span> info@nadaca.org
                                     </li>
                                     <li>
                                         <span>PHONE</span> (844) 202-4800
                                     </li>
                                     <li>
-                                        <span>ADDRESS</span> AVO Realty, 12034 Research Blvd, Ste. 3 Austin, TX, 78759
+                                        <span>ADDRESS</span> NADACA.ORG, 3550 N, Lakeline Blvd, Ste 170, Leander, TX 78641
                                     </li>
                                     <li>
-                                        <span>WEBSITE</span> avovirtual.com
+                                        <span>WEBSITE</span> nadaca.com
                                     </li>
                                 </ul>
                             </div>
