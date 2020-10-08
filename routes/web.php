@@ -50,3 +50,5 @@ Route::post('/admin/updatePost/{id}', array('uses' => 'Controller@updatePost'));
 Route::post('/ajax_upload/action', array('uses' => 'Controller@action', 'as' => 'ajaxupload'));
 
 Route::post('/help/mail', array('as' => 'mail', 'uses' => 'Controller@sendMail'));
+
+Route::post('/contact/mail', array('as' => 'cmail', 'uses' => 'Controller@sendMailContact'));

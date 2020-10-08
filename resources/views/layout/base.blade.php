@@ -75,6 +75,7 @@ fbq('track', 'PageView');
 <script>        
 var help = '{{ route('help') }}';         
 var mail = '{{ route('mail') }}';
+var cmail = '{{ route('cmail') }}';
  </script>
 
 
@@ -129,6 +130,34 @@ $('.sendMail').on('submit', function(e){
             }
             else{
                 $("#validationErrors").html('<p style="color: red">' + data.message + '</p>');
+            }
+        }
+    })
+}); 
+</script>
+
+<script>
+$('.sendMailContactForm').on('submit', function(e){
+    e.preventDefault();
+    var form = document.forms.namedItem("cForm");
+    $('input[type=submit].sendMailContact').val('Sending...');
+    $('input[type=submit].sendMailContact').attr('disabled','disabled');
+    $.ajax({
+        method: 'POST',
+        url: cmail,
+        data: new FormData(form),
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: function (data) { 
+            if(data.message == 'success'){
+                console.log('Email Sent');
+                $('input[type=submit].sendMailContact').hide();
+                $('#sendmail-btn').html('<span style="color: green">Mail Sent!</span>');
+            }
+            else{
+                console.log('Email not Sent');
+                $("#validationErrorsC").html('<p style="color: red">' + data.message + '</p>');
             }
         }
     })

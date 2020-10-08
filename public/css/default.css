@@ -765,6 +765,22 @@ GET HELP
     height: 100%;
 }
 
+#news a.oval-btn {
+    color: #fff;
+    background-color: #419a1c;
+    border-color: #ccc;
+    padding: 13px 40px;
+    margin: 20px 0px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    -webkit-transition: background-color 0.8s ease-out;
+    -moz-transition: background-color 0.8s ease-out;
+    -o-transition: background-color 0.8s ease-out;
+    transition: background-color 0.8s ease-out;
+    width: auto;
+}
+
 /* ============================
 POST PAGE
 ============================ */
@@ -928,7 +944,8 @@ POST PAGE
 RESOURCES
 ============================ */
 #resources{
-    padding:12rem 0;
+    padding:12rem 0 3rem;
+    background: #f2f2f2;
 }
 
 #resources ul{

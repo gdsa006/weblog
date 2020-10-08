@@ -22,7 +22,7 @@
                                 <li><a href="{{ (Request::is('login') || Request::is('admin/*') || Request::is('resources') ? '/#getHelp' : '#getHelp') }}">GET HELP</a></li>
                                 <li><a href="{{ (Request::is('login') || Request::is('admin/*') || Request::is('resources') ? '/#news' : '#news') }}">NEWS</a></li>
                                 <li><a href="/resources" class="{{ Request::is('resources') ? 'active' : '' }}">RESOURCES</a></li>
-                                <li class=" logIn"><a data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl" href="" data-scrolltime="1500">Join Now</a></li>
+                                <li class=" logIn"><a data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl" href="" data-scrolltime="1500">Get Started</a></li>
                             </ul>
                         </nav>
                     </div>

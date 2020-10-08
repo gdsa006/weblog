@@ -7,7 +7,7 @@
         </video>
 
        <div class="transform-center">
-            <h1>Nation Association of Debt and Credit Advocates</h1>
+            <h1>National Association of Debt and Credit Advocates</h1>
             <span>Educate . Advocate . Protect</span>
         </div>
     </section>
@@ -253,6 +253,7 @@
                 </div>
           @endforeach      
             </div>
+            <div style="text-align: center; padding: 40px 0"><a class="btn oval-btn" href="/blog">View All</a></div>
     </section>
 
     @stop

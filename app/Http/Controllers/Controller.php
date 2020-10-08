@@ -308,4 +308,44 @@ public function updatePost($id, Request $request){
     }
 
 }
+
+
+
+
+public function sendMailContact(Request $request){
+    $first_name = Input::get('first_name');
+    $last_name = Input::get('last_name');
+    $email = Input::get('email');
+    $telephone = Input::get('telephone');
+    $details = Input::get('details');
+    $rules = ([
+        'first_name'    => 'required',
+        'last_name' => 'required',
+        'email' => 'required',
+        'telephone' => 'required',
+        'details' => 'required',
+    ]);
+
+    $validator = Validator::make($request->all(), $rules);
+
+    if ($validator->fails()) {
+        return Response::json([
+            'message'   => $validator->errors()->all(),
+            ]);
+        }
+    else{
+
+         Mail::send('contactme', array('first_name'=>Input::get('first_name'), 'last_name'=>Input::get('last_name'), 'email'=>Input::get('email'), 'telephone'=>Input::get('telephone'),'details'=>Input::get('details')), function($message){
+             $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('email'), Input::get('first_name'))->subject(Input::get('first_name').' contacted you from this.COM');
+         });
+            return Response::json([
+                'message'   => 'success',
+                ]);
+        
+}
+
+}
+
+
+
 }

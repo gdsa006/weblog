@@ -448,24 +448,27 @@ array(
                                 <!-- FORM START -->
                                 <div class="contactFrom">
                                     <div class="row">
-                                        <form name="leadform" method="post" action="send_form_email.php">
+                                        <div id="validationErrorsC"></div>
+                                    {{ Form::open(array('url' => '/contact/mail', 'class' => 'mt-4 sendMailContactForm', 'name' => 'cForm', 'files' => 'false', 'enctype' => 'multipart/form-data')) }}
                                             <div class="form-group col-md-6 fieldone">
-                                                <input type="test" class="form-control" id="first_name" name="first_name" placeholder="First Name" required>
+                                                {{ Form::text('first_name', Input::old('first_name'), array('placeholder' => 'First Name', 'class' => 'form-control', 'required' => 'required', 'id' => 'first_name' )) }}
                                             </div>
                                             <div class="form-group col-md-6 fieldtwo">
-                                                <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" required>
+                                                {{ Form::text('last_name', Input::old('last_name'), array('placeholder' => 'Last Name', 'class' => 'form-control', 'required' => 'required', 'id' => 'last_name' )) }}
                                             </div>
                                             <div class="form-group col-md-6 fieldthree">
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                                {{ Form::email('email', Input::old('email'), array('placeholder' => 'Email', 'class' => 'form-control', 'required' => 'required', 'id' => 'email' )) }}
                                             </div>
                                             <div class="form-group col-md-6 fieldfour">
-                                                <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Phone" required>
+                                                {{ Form::text('telephone', Input::old('telephone'), array('placeholder' => 'Telephone', 'class' => 'form-control', 'required' => 'required', 'id' => 'telephone' )) }}
                                             </div>
                                             <div class="form-group col-md-12 fieldfive">
-                                                <textarea style="resize: none;" class="form-control" rows="3" id="details" name="details" placeholder="Message" required></textarea>
+                                                {{ Form::textarea('details', Input::old('details'), array('placeholder' => '', 'class' => 'form-control', 'required' => 'required', 'id' => 'details', 'rows' => '3' )) }}
                                             </div>
-                                            <div class="form-group col-md-12"><button type="submit" class="btn btnsubmit">LET'S GO!</button></div>
-                                        </form>
+                                            <div class="form-group col-md-12" id="sendmail-btn">{{ Form::submit('Send', ['class' => 'btn btnsubmit sendMailContact']) }}</div>
+                                            
+
+                                    {{ Form::close() }}
                                     </div>
                                 </div>
                                 <!-- FORM ENDS -->
