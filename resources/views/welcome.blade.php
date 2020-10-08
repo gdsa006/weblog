@@ -212,7 +212,7 @@
             </div>
             <div class="row equal">
                 <div class="col-md-6">
-                    <img src="images/stock-photo-time-to-evaluate-red-word-on-concept-clock-isolated-on-white-background-354927293.jpg" class="img-responsive">
+                    <img src="images/help.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-6">
                     <div class="wrapper vertical-align">
