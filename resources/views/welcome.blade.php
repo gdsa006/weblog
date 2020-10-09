@@ -28,9 +28,10 @@
             <div class="row row-eq-height">
             <div class="col-sm-5">
                     <div class="aboutPic embed-responsive embed-responsive-16by9" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
-                    <video autoplay loop class="">
+                    <!-- <video autoplay loop class="">
                             <source src="images/mission.mp4" type="video/mp4">
-                        </video>
+                        </video> -->
+                        <img src="images/mission.jpg">
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -96,10 +97,11 @@
             </div>
             <div class="row row-eq-height">
                 <div class="col-sm-5">
-                    <div class="aboutPic embed-responsive embed-responsive-16by9" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
-                    <video autoplay loop class="">
+                    <div class="aboutPic embed-responsive" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
+                    <!-- <video autoplay loop class="">
                             <source src="images/educate.mp4" type="video/mp4">
-                        </video>
+                        </video> -->
+                        <img src="images/educate.jpg">
                     </div>
                 </div>
                 <div class="col-sm-7">
@@ -132,20 +134,22 @@
                     </div>
                 </div>
                 <div class="col-sm-5 order-1">
-                    <div class="aboutPic embed-responsive embed-responsive-16by9" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
-                        <video autoplay loop class="">
+                    <div class="aboutPic embed-responsive" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
+                        <!-- <video autoplay loop class="">
                             <source src="images/advocate.mp4" type="video/mp4">
-                        </video>
+                        </video> -->
+                        <img src="images/advocate.jpg">
                     </div>
                 </div>
             </div>
             <div class="divseprator"></div>
             <div class="row row-eq-height">
                 <div class="col-sm-5">
-                    <div class="aboutPic embed-responsive embed-responsive-16by9" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
-                    <video autoplay loop class="">
+                    <div class="aboutPic embed-responsive" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="400">
+                    <!-- <video autoplay loop class="">
                             <source src="images/project.mp4" type="video/mp4">
-                        </video>
+                        </video> -->
+                        <img src="images/project.jpg">
                     </div>
                 </div>
                 <div class="col-sm-7">

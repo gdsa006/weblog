@@ -187,10 +187,11 @@ table tr:hover{
    
         <!-- Bootstrap jQuery -->
         <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="{{ asset('js/script.js') }}"></script>
+
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery.navScroll.js') }}"></script>
     <!-- All Script -->
-    <script src="{{ asset('js/script.js') }}"></script>
 
     <!-- Owl Carousel -->
     <!-- <script src="{{ asset('js/jquery.min.js') }}"></script> -->

@@ -290,7 +290,7 @@ public function updatePost($id, Request $request){
         else{
 
              Mail::send('contact-mail', array('service'=>Input::get('service'), 'state'=>Input::get('state'), 'zipcode'=>Input::get('zipcode'), 'yourname'=>Input::get('yourname'),'youremail'=>Input::get('youremail'), 'telephone'=>Input::get('telephone')), function($message){
-                 $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('youremail'), Input::get('yourname'))->subject(Input::get('yourname').' contacted you from this.COM');
+                 $message->to('info@nadaca.org', 'admin')->replyTo(Input::get('youremail'), Input::get('yourname'))->subject(Input::get('yourname').' contacted you from NADACA.ORG');
              });
                 $help = new Help();
                $help->service = $service;
@@ -336,7 +336,7 @@ public function sendMailContact(Request $request){
     else{
 
          Mail::send('contactme', array('first_name'=>Input::get('first_name'), 'last_name'=>Input::get('last_name'), 'email'=>Input::get('email'), 'telephone'=>Input::get('telephone'),'details'=>Input::get('details')), function($message){
-             $message->to('gdsa006@gmail.com', 'admin')->replyTo(Input::get('email'), Input::get('first_name'))->subject(Input::get('first_name').' contacted you from this.COM');
+             $message->to('info@nadaca.org', 'admin')->replyTo(Input::get('email'), Input::get('first_name'))->subject(Input::get('first_name').' contacted you from NADACA.ORG');
          });
             return Response::json([
                 'message'   => 'success',

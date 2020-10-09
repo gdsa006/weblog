@@ -324,8 +324,7 @@ array(
             <div class="modal-content">
                 <button type="button" class="modal-header close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <div class="modal-body">
-                    <p>NADACA does not provide legal services or advice. The information on NADACA.org is for informational purposes only and is not legal advice or a substitute for legal counsel. The information contained on NADACA.org may or may not reflect the most current legal developments. </p>
-                    <p>NADACA provides links to attorneys, organizations, and governmental entities that promote justice for consumers with the mission to protect against predatory business practices. We do not intend such links or referrals to be endorsements of the linked entities.</p>
+                    <p>DISCLAIMER: NADACA("NADACA.ORG") is not a law firm, does not act as your attorney, and is not a substitute for advice from an attorney. NADACA.ORG does not provide any legal advice, and none of the information provided herein or on any completed document should be construed as legal advice. NADACA.ORG cannot provide legal advice, cannot appear in court, and can only provide self-help services at your specific direction. NADACA.ORG can assist you in completing legal forms when you are seeking to represent yourself in your own legal matters. If you need legal representation, are involved in litigation, or have complex legal issues that cannot be handled or dealt with on your own, you should seek competent legal advice and/or hire an attorney. Our legal documentation preparation service uses the answers you provide to automatically populate legal forms and complete them on your behalf. Our review of your answers is limited solely to completeness, spelling and grammar, internal consistency of names, addresses and the like. At no time do we review your answers for legal sufficiency, draw legal conclusions, provide advice or apply the law to the facts of your particular situation. We can point you in a direction for the answers you seek. Our company cannot provide legal advice for any situation or case. As such we cannot make personal recommendations as to what documents should or should not be used and cannot attempt to predict the legal impact of using any certain response or form. This document preparation service is not intended to create an attorney-client relationship, and by using our services, no attorney-client relationship will be created. You are totally and solely responsible for your own selections and actions. Again, NADACA.ORG cannot make any recommendations for any corrections or changes to the documents or their application, content or use.</p>
                 </div>
             </div>
         </div>
@@ -421,20 +420,20 @@ array(
                                 <ul>
                                     <li>
                                         <div class="formlogo">
-                                            <img src="images/avo-logo.png" alt="AVO Logo">
+                                            <img src="images/logo.png" alt="AVO Logo">
                                         </div>
                                     </li>
                                     <li>
-                                        <span>EMAIL</span> Concierge@avorealty.com
+                                        <span>EMAIL</span> info@nadaca.org
                                     </li>
                                     <li>
                                         <span>PHONE</span> (844) 202-4800
                                     </li>
                                     <li>
-                                        <span>ADDRESS</span> AVO Realty, 12034 Research Blvd, Ste. 3 Austin, TX, 78759
+                                        <span>ADDRESS</span> NADACA.ORG, 3550 N, Lakeline Blvd, Ste 170, Leander, TX 78641
                                     </li>
                                     <li>
-                                        <span>WEBSITE</span> avovirtual.com
+                                        <span>WEBSITE</span> nadaca.org
                                     </li>
                                 </ul>
                             </div>
