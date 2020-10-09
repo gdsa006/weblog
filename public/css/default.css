@@ -82,14 +82,18 @@ HEADER/BANNER STYLE
 header {
     position: fixed;
     background: #fff;
-    padding: 20px 0px;
+    padding: 22px 0px;
     color: #333;
     border-bottom: 1px solid #ececec;
 }
 
 .logowrap {
-    width: 100px;
+    width: 135px;
     float: left;
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%) !important;
+    top: 50%;
+    margin-top: 3px;
     /*position: relative;
 top: -11px;*/
 }
@@ -1688,9 +1692,13 @@ RESPONSIVE STYLE
 
 @media only screen and (max-width: 768px) {
 
+    .logowrap{
+        position: relative !important;
+        transform: inherit !important;
+    }
     .help-form .modal-dialog{
         width: 100% !important;
-         margin: auto !important;
+        margin: auto !important;
     }
     #getHelp .wrapper{
         margin: 0 !important
@@ -1707,7 +1715,7 @@ LOGO STYLE
         margin: auto;
     }
     header {
-        padding: 11px 0px;
+        padding: 16px 0px;
     }
     header .navigate {
         font-size: 14px;
