@@ -4,6 +4,12 @@
 
 
 <section id="post">
+<div class="container breadcrumbs">
+    <div class="">
+    <a href="#" class="">Home</a> <a href="/articles"  class="">Articles</a> <a href="/articles/{{$post->slug}}"  class="active">{{$post->post_title}}</a>
+    </div>
+</div>
+
     <div class="container">
 
         <div class="row">

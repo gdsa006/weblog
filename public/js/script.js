@@ -36,10 +36,10 @@
       navHeight: 0
     });
 
-    $('.nav').on('click', '.nav-mobile', function (e) {
-      e.preventDefault();
-      $('.nav ul').slideToggle('fast');
-    });
+    // $('.nav').on('click', '.nav-mobile', function (e) {
+    //   e.preventDefault();
+    //   $('.nav ul').slideToggle('fast');
+    // });
 
 
 

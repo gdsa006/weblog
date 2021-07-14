@@ -17,11 +17,11 @@ Route::get('/resources', array('uses' => 'Controller@resources'));
 
 Route::get('/advocate/help', array('as' => 'help', 'uses' => 'Controller@helpForm'));
 
-Route::get('/blog', array('uses' => 'Controller@blog'));
+Route::get('/articles', array('uses' => 'Controller@blog', 'as' => 'articles',));
 
-Route::get('/blog/{year}/{month}', array('uses' => 'Controller@filterData'));
+Route::get('/articles/{year}/{month}', array('uses' => 'Controller@filterData'));
 
-Route::get('/blog/{slug}', array('uses' => 'Controller@blogPost'));
+Route::get('/articles/{slug}', array('uses' => 'Controller@blogPost'));
 
 Route::get('/search', array('uses' => 'Controller@search'));
 

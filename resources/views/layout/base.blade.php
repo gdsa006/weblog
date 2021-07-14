@@ -35,6 +35,8 @@ fbq('track', 'PageView');
     <!-- Stylesheet -->
     <link rel="stylesheet" href="{{ asset('css/default.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
+
     <!-- Fontawesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
@@ -71,6 +73,35 @@ fbq('track', 'PageView');
     <!-- Animation -->
     <script src="js/aos.js"></script>
 
+    <script>
+$(document).ready(function() {
+
+  $("nav.toggle-sidebar").toggleClass("menu_show");
+
+  $("body").on('click', '.top', function() {
+  $("nav.menu").toggleClass("menu_show");
+  $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  }
+  );
+
+  $(".item_menu").on('click', function(){
+    $("nav.menu").toggleClass("menu_show");
+    $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  })
+
+
+  $("#overlay").on('click', function() {
+    $("nav.menu").toggleClass("menu_show");
+    $('#overlay').toggleClass('overlay');
+  // $('#tiv-header').toggleClass('sticky');
+  })
+
+ 
+
+})
+</script>
     
 <script>        
 var help = '{{ route('help') }}';         

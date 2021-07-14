@@ -2,10 +2,10 @@
 							FOOTER AND CAPTION
 	============================================= -->
 
-<footer data-aos="fade-up">
+<footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 social" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" style="text-align: center;">
+            <!-- <div class="col-md-12 social" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" style="text-align: center;">
                 <a href="#">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -15,37 +15,30 @@
                 <a href="#">
                     <i class="fab fa-youtube"></i>
                 </a>
-            </div>
-            <div class="col-md-12">
+            </div> -->
+            <!-- <div class="col-md-12">
                 <div class="foote-details" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
                     <p>©NADACA 2020 <span>|</span> All Rights Reserved <span>|
                         </span> <a href="" data-toggle="modal" data-target="#disclaimer">Disclaimer</a></p>
                     <p>NADACA.ORG, 3550 N, Lakeline Blvd, Ste 170, Leander, TX 78641</p>
                     <p>Email: info@nadaca.org</p>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="row">
+        <!-- <div class="row">
                 <div class="col-lg-12">
                     <div id="divbar" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400"></div>
                 </div>
-            </div>
-            <div class="row" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+            </div> -->
+            <div class="row">
                 <div class="col-lg-6">
-                    <div class="subscrbe">
-                        <div class="subscrbe-container">
-                            <form method="post" action="https://sendfox.com/form/3o09v3/3z0zwm" class="sendfox-form" id="3z0zwm" data-async="true"><input type="email" placeholder="Email Subscription" name="email" required />
-
-                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div><button type="submit">Submit</button></form>
-                            <script src="https://sendfox.com/js/form.js"></script>
-                        </div>
-                    </div>
+                    <p>Copyright © 2021 YouTruth.video. All rights reserved.</p>
                 </div>
                 <div class="col-lg-6">
                     <div class="captionlinks">
-                        <a href="#" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">JOIN NOW</a>
-                        <a href="/blog">ARCHIVES</a>
-                        <a href="#" data-toggle="modal" data-target=".contactUsModel">CONTACT US</a>
+                        <a href="#" data-id="8EoSXrHjjk0" data-toggle="modal" data-target=".bd-example-modal-xl">About Us</a>
+                        <a href="/blog">Archives</a>
+                        <a href="#" data-toggle="modal" data-target=".contactUsModel">Contact Us</a>
                     </div>
                 </div>
 

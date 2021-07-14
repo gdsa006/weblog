@@ -32,6 +32,8 @@ fbq('track', 'PageView');
     <!-- FontAwesome -->
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/roadmap.css') }}">
+
     <!-- Fontawesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
@@ -123,7 +125,7 @@ table tr:hover{
 }
 
 .nav>li.active a{
-  color: #419a1c !important;
+  color: #f65151 !important;
 }
 
 #uploaded_image{
@@ -140,15 +142,16 @@ table tr:hover{
 }
 
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
-  background-color: #419a1c;
-    border-color: #419a1c;
+  background-color: #f65151;
+    border-color: #f65151;
 }
 
 .pagination>li>a, .pagination>li>span{
-  color: #419a1c;
+  color: #f65151;
 }
 </style>
-    <title>AVO Realty | Showings on Demand | Live, Interactive, Virtual</title>
+
+    <title>TI Videos</title>
     </head>
     <body>
         

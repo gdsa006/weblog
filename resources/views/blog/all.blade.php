@@ -4,13 +4,18 @@
 
 
 <section id="post">
+<div class="container breadcrumbs">
+    <div class="">
+    <a href="#" class="">Home</a> <a href="/articles"  class="active">Articles</a>
+    </div>
+</div>
     <div class="container">
 
         <div class="row">
             <div class="col-md-8">
             @foreach($posts as $post)
                 <div class="col-md-12 data" style="margin: 10px 0;">
-                    <a href="/blog/{{$post->slug}}">
+                    <a href="/articles/{{$post->slug}}">
                   <p>{{$post->post_title}}</p>
                   <span>June 26, 2018</span>
                   <div class="blog-image">
@@ -45,7 +50,7 @@
                     <ul>
                         @foreach($recent as $new)
                         <li class="row">
-                            <a href="/blog/{{$new->slug}}">
+                            <a href="/articles/{{$new->slug}}">
                             <div class="col-md-4">
                                 <div class="blog-image">
                                     <img src="/images/uploads/{{$new->image}}">
@@ -80,7 +85,7 @@
                         $exploded = explode(" ",$date);
                         ?>
                             <span class="d-inline">    
-                                <a class="nav-link collapsed text-truncate px-0 d-inline" href=<?php echo '/blog/' . $exploded[0] . '/' . $exploded[1] ?>>{{ $date }}</a>
+                                <a class="nav-link collapsed text-truncate px-0 d-inline" href=<?php echo '/articles/' . $exploded[0] . '/' . $exploded[1] ?>>{{ $date }}</a>
                              </span>
                         </li>
                         @endforeach

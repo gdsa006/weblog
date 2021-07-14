@@ -1,7 +1,7 @@
   <!-- Sidebar -->
   <div id="sidebar">
     <header>
-      <a href="#">NADACA Admin</a>
+      <a href="#">YouTruth Admin</a>
     </header>
     <ul class="nav">
       <li class="{{ (request()->is('admin/dashboard')) ? 'active' : '' }}">
